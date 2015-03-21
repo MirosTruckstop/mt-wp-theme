@@ -1,0 +1,206 @@
+/*
+Theme Name: MT Theme
+Author: Xennis
+Description: WordPress Design of MiRo's Truckstop
+Version: 1.0
+Text Domain: mtTheme
+*/
+
+@import url('css/position.css');
+@import url('css/personal.css');
+@import url('css/images.css');
+
+html>body header ul {
+	overflow: hidden;
+}
+article {
+	float: left;
+}
+/*#image {
+	margin-bottom: 10px;
+	margin-left: 10px;
+}*/
+/* Navigation */
+header ul {
+	list-style-type: none;
+	width: 100%;
+	margin: 0;
+	padding: 0;
+}
+header ul li,
+footer ul li {
+	float: left;
+}
+header a {
+	margin: 0 1px;
+	padding: 5px;
+	display: block;
+	border: 1px solid #eee;
+	color: #000;
+	text-decoration: none;
+}
+header a:hover {
+	color: #fff;
+	text-decoration: none;
+	background-color: #f93;
+	border: 1px solid #f93;
+}
+footer ul {
+	list-style-type: none;
+	height: 12px;
+}
+footer li {
+	border-right: 1px solid;
+	margin-right: 5px; 
+}
+footer li:last-child {
+	border-right: none;
+}
+footer a {
+	display: block;
+	padding-right: 5px;
+	font-size: 0.85em;
+}
+/* Fußzeile */
+footer p {
+	margin: 0;
+	font-size: 0.85em;
+	text-align: left;
+}
+#copyright {
+	float: right;
+	text-align: right;
+}
+#copyright {
+	font-size: 0.85em;
+}
+footer a {
+	color: #3F58BC;
+}
+footer a:hover {
+	color: #00008B;
+	text-decoration: none;
+}
+.style_bold {
+	font-weight: bold;
+}
+.style_italic {
+	font-style: italic;
+}
+/* Überschriften */
+h1 {
+	font-size: x-large;
+	color: #111111;
+	margin-top: 0px;
+	font-weight: normal;
+}
+h2 {
+	font-size: large;
+	color: #222222;
+	margin-top: 0px;
+	font-weight: normal;
+}
+h3 {
+	font-size: medium;
+	color: #333333;
+	margin-top: 0px;
+	padding-top: 15px;
+	text-align: center;
+}
+h4 { 
+	font-size: x-small;
+	margin-top: 0px;
+}
+h5 { 
+	font-size: xx-small;
+	margin-top: 0px;
+}
+h6 {
+}
+/* Links */
+a {
+	color: #677BCB;
+}
+a:hover {
+	color: #FF9933;
+}
+/* Tabellen */
+table {
+	border-width: 0px;
+}
+table th {
+	font-weight: bold;
+	vertical-align: top;
+}
+table td {
+	text-align: left;
+	vertical-align: top;
+}
+table.vertical {
+	border-spacing:5px;
+}
+table.horizontalLeft {
+	border-spacing:3px;
+	padding-bottom:15px;
+}
+table.vertical th,
+table.horizontalLeft th {
+	text-align:left;
+}
+.small {
+	font-size:10px;
+}
+
+
+
+
+.table_quer th,
+.table_quer td {
+	padding:5px;
+}
+.table_hoch_2 th,
+.table_hoch_2 td {
+	padding:1px;
+}
+.table_quer th, .table_hoch_2 th {
+	text-align: left;
+}
+.table_hoch th {
+	text-align: center;
+}
+/* Linkleiste */
+#link_leiste {
+	font-size: 11px;
+	padding-bottom: 8px;
+}
+
+span.u {
+	text-decoration: underline;
+}
+p.mail {
+	text-align: center;
+	text-decoration: underline;
+}
+
+mark.b {
+	font-weight:bold;
+	background:none;
+}
+p.center,
+.center {
+	text-align:center;
+}
+img.center {
+	display:block;
+	margin:auto;
+}
+
+iframe.gaestebuch {
+	border:medium none;
+	width:100%;
+	height:3000px;
+	border:none;
+}
+img {
+	border:none;
+}

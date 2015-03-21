@@ -1,0 +1,28 @@
+body {
+	background-image:  url("../images/background.gif");
+	font-family: Verdana, Helvetica, Sans-Serif, Arial;
+	font-size: 0.75em;
+}
+#container {
+	border-style: solid;
+	border-color: #666666;
+	background: #3F58BC url("../images/leftphoto.jpg") no-repeat left bottom;
+}
+header #logo {
+	background-color: #FFFFFF;
+	background-image: url("../images/logo.png");
+	background-position: left top;
+	border-bottom: 6px solid #FF9900;
+}
+header ul {
+	background-color: #EEEEEE;
+}
+#content_container {
+	background-color:#FFFFFF;
+}
+footer {
+	background-color: #FFFFFF;
+	color: #666666;
+	border-top: 1px solid #CCCCCC;
+}
+
