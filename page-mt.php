@@ -7,7 +7,7 @@
 			switch ($viewType) {
 				case 'bilder/galerie':
 					require_once(MT_DIR . '/public/view/Gallery.php');		
-					$view = new MT_View_Gallery($id);
+					$view = new MT_View_Gallery($id, get_query_var('mtPage', 1), get_query_var('mtNum', 10), get_query_var('mtSort', 'date'));
 					break;
 				case 'bilder/kategorie':
 					require_once(MT_DIR . '/public/view/Category.php');
