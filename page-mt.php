@@ -1,9 +1,9 @@
 <?php
-	require_once(MT_DIR . '/public/view/ICommon.php');		
-	$viewType = get_query_var('mtView');
-	$id = intval(get_query_var('mtId'));
-	if (defined('MT_DIR') && !empty($id)) {
+	if (defined('MT_DIR')) {
 		try {
+			require_once(MT_DIR . '/public/view/ICommon.php');		
+			$viewType = get_query_var('mtView');
+			$id = intval(get_query_var('mtId'));
 			switch ($viewType) {
 				case 'bilder/galerie':
 					require_once(MT_DIR . '/public/view/Gallery.php');		

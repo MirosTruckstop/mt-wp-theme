@@ -53,3 +53,7 @@
 div.photo span[itemprop="keywords"] {
 	display:none;
 }
+/* Limit width */
+div.photo img {
+	max-width: 750px;
+}
