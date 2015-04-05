@@ -204,3 +204,10 @@ iframe.gaestebuch {
 img {
 	border:none;
 }
+
+div.postDate {
+	border-bottom: 1px dashed #666666;
+	text-align: right;
+	font-size: smaller;
+	color: #666666;
+}
