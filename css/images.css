@@ -24,6 +24,7 @@
 #auswahl_leiste table td {
 	vertical-align: middle;
 	text-align: right;
+	padding-right: 3px;
 }
 .auswahl_leiste_links {
 	text-align: left;
