@@ -1,19 +1,14 @@
 <?php
 get_header();
 
-if (have_posts()) :
-	while (have_posts()) : the_post(); ?>
+while (have_posts()) : the_post(); ?>
 
 	<article>
-		<h1><?php the_title(); ?></h1>
+		<h1><?php !is_front_page() ? the_title() : ''; ?></h1>
 		<?php the_content(); ?>
 	</article>
-	<?php endwhile;
-	
-else:
-	echo '<p>No content found</p>';
 
-endif;
+<?php endwhile;
 
 get_footer();
 ?>

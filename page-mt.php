@@ -25,7 +25,6 @@ if (defined('MT_DIR')) {
 				break;
 			default:
 				throw new Exception('Unkown viewType');
-				break;
 		}
 	} catch (Exception $e) {
 		require_once(MT_DIR . '/public/view/Error.php');
