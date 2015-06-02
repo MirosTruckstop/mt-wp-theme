@@ -11,7 +11,12 @@ if (have_posts()) :
 	<?php endwhile;
 	
 else:
-	echo '<p>No content found</p>';
+	?>
+	<article>
+		<h1>Fehler</h1>
+		<p>Seite existiert nicht</p>
+	</article>
+	<?php
 
 endif;
 
