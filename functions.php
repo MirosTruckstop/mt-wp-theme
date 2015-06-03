@@ -60,20 +60,20 @@ function mtTheme_page_settings() {
 		<?php settings_fields('mtTheme-settings'); ?>
 		<?php do_settings_sections('mtTheme-settings'); ?>
         <table class="form-table">
-            <tr valign="top">
-                <th scope="row"><?php _e('Author'); ?></th>
+            <tr>
+                <th><?php _e('Author'); ?></th>
                 <td><input type="text" name="author" class="regular-text" value="<?php echo esc_attr( get_option('author') ); ?>" /></td>
             </tr>
-            <tr valign="top">
-                <th scope="row"><?php _e('Description'); ?></th>
-                <td><textarea name="description" class="large-text" rows="5"><?php echo esc_attr( get_option('description') ); ?></textarea></td>
+            <tr>
+                <th><?php _e('Description'); ?></th>
+                <td><textarea name="description" rows="4" style="width: 500px;"><?php echo esc_attr( get_option('description') ); ?></textarea></td>
             </tr>
-            <tr valign="top">
-                <th scope="row"><?php _e('Keywords'); ?></th>
-                <td><textarea name="keywords" class="large-text" rows="10"><?php echo esc_attr( get_option('keywords') ); ?></textarea></td>
+            <tr>
+                <th><?php _e('Keywords'); ?></th>
+                <td><textarea name="keywords" rows="10" style="width: 500px;"><?php echo esc_attr( get_option('keywords') ); ?></textarea></td>
             </tr>
-            <tr valign="top">
-                <th scope="row"><?php _e('Copyright'); ?></th>
+            <tr>
+                <th><?php _e('Copyright'); ?></th>
                 <td><input type="text" name="copyright" class="regular-text" value="<?php echo esc_attr( get_option('copyright') ); ?>" /></td>
             </tr>				
         </table>
