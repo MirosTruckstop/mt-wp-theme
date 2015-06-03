@@ -14,10 +14,16 @@ if ( ! function_exists( 'mtTheme_setup' ) ) :
  */	
 function mtTheme_setup() {
 	
+	/*
+	 * Make theme available for translation.
+	 * Translations can be filed in the /languages/ directory.
+	 */
+	load_theme_textdomain('mtTheme', get_template_directory() . '/languages');
+
 	// Register navigation menus
 	register_nav_menus(array(
-		'main' => __( 'Main Menu' ),
-		'footer' => __( 'Footer Menu' ),
+		'primary' => __('Primary Menu', 'mtTheme'),
+		'footer' => __('Footer Links Menu', 'mtTheme'),
 	));
 
 	//add_theme_support( 'title-tag' );

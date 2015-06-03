@@ -13,8 +13,8 @@ if (have_posts()) :
 else:
 	?>
 	<article>
-		<h1>Fehler</h1>
-		<p>Seite existiert nicht</p>
+		<h1><?php _e('Error', 'mtTheme'); ?></h1>
+		<p><?php _e('Page does not exists', 'mtTheme'); ?></p>
 	</article>
 	<?php
 

@@ -24,7 +24,7 @@ if (defined('MT_DIR')) {
 				$view = new MT_View_Photographer($id);
 				break;
 			default:
-				throw new Exception('Unkown viewType');
+				throw new Exception(__('Unkown viewType', 'mtTheme'));
 		}
 	} catch (Exception $e) {
 		require_once(MT_DIR . '/public/view/Error.php');

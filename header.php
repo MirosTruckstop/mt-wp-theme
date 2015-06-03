@@ -54,7 +54,7 @@ setlocale(LC_ALL, get_locale().'.'.get_bloginfo('charset'));
 				</div><!-- .social_media -->
 			</div><!-- .logo -->
 			<?php wp_nav_menu(array(
-				'theme_location' => 'main'
+				'theme_location' => 'primary'
 			)); ?>
 			
 		</header>
