@@ -7,9 +7,9 @@ setlocale(LC_ALL, get_locale().'.'.get_bloginfo('charset'));
 	<!-- Meta -->
 	<meta charset="<?php bloginfo('charset'); ?>"
 	<meta name="viewport" content="width=device-width">
-	<meta name="author" content="Michael R.">	
-	<meta name="description" content="In MiRo's Truckstop findest du Truck Bilder, speziell Büssing und MAN TGA und TGX / TGS Bilder.">
-	<meta name="keywords" content="Miro's,Truckstop, MiRo, Rosensturm, Trucks,Truck Bilder,Truck Fotos,Lkw Bilder,Lkw Fotos,Büssing,MAN,Büssing BS 16,Büssing BS 22,Büssing 12000,Büssing 12000 U,Büssing Comodore,Commodore,Büssing LU11,Büssing 8000,Büssing Hauber,Büssing Busse,MAN TGA,MAN Büssing,Fotos von Büssing,Fotos von MAN TGA,MAN TGX, MAN TGX V8, MAN TGS, Herpa, Hamburg Süd, Büssing BS 16 und BS 22, Wiking Büssing, Roskopf Büssing, Container Hamburg Süd, Container, MAN-Büssing, Büssing Unterflur, Unterflur, Reederei Hamburg Süd, Büssing Modelle, 1:87 Modelle, 1:87, MAN Modelle, Roskopf, Roskopf Modelle, MAN F8, Roskopf/Herpa,Wiking, 6 und 8, 6 und 8 meter Hängerzüge, Angermayr, Büssing-Treffen 2009, Büssingtreffen, Büssing Treffen 2009, Buessing-Treffen 2009">	
+	<meta name="author" content="<?php echo get_option('author'); ?>">	
+	<meta name="description" content="<?php echo get_option('description'); ?>">
+	<meta name="keywords" content="<?php echo get_option('keywords'); ?>">	
 
 	<!-- Title -->
 	<title><?php global $view; ($view) ? $view->outputTitle() : the_title(); ?> | <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
