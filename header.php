@@ -1,5 +1,6 @@
-<?php setlocale(LC_ALL, get_locale().'.'.get_bloginfo('charset')); ?>
-<!DOCTYPE HTML>
+<?php
+setlocale(LC_ALL, get_locale().'.'.get_bloginfo('charset'));
+?><!DOCTYPE HTML>
 <html <?php language_attributes(); ?>>
 <head>
 
@@ -48,13 +49,15 @@
 		<header>
 
 			<div id="logo">
-				<div id="social_media"><iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmiros.truckstop.buessing&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=20" scrolling="no" frameborder="0" allowTransparency="true"></iframe></div>
-			</div>
+				<div id="social_media">
+					<iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmiros.truckstop.buessing&amp;width&amp;layout=button&amp;action=like&amp;show_faces=false&amp;share=false&amp;height=20" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
+				</div><!-- .social_media -->
+			</div><!-- .logo -->
 			<?php wp_nav_menu(array(
 				'theme_location' => 'main'
 			)); ?>
 			
 		</header>
 		
-	<!-- Begin content_container -->
-	<div id="content_container">
+		<!-- Begin content_container -->
+		<div id="content_container">

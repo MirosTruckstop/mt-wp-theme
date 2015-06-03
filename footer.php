@@ -5,8 +5,8 @@
 		)); ?>		
 	</footer>
 
-	</div><!-- End content_container -->
-</div><!-- End Container -->
+	</div><!-- .content_container -->
+</div><!-- .Container -->
 
 <?php wp_footer(); ?>
 
