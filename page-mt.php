@@ -25,7 +25,7 @@ if (defined('MT_DIR')) {
 				break;
 			default:
 				header("HTTP/1.0 404 Not Found");
-				throw new Exception(__('Unkown viewType', 'mtTheme'));
+				throw new Exception(__('Unkown viewType', MT_THEME_NAME));
 		}
 	} catch (Exception $e) {
 		require_once(MT_DIR . '/public/view/Error.php');

@@ -1,10 +1,16 @@
 <?php
+/**
+ * Theme name
+ */
+define('MT_THEME_NAME', 'mt-wp-theme');
+
+echo MT_THEME_NAME;
 
 /**
  * Enqueue scripts and styles.
  */
 function mtTheme_scripts() {
-	wp_enqueue_style('mtTheme-style', get_stylesheet_uri());
+	wp_enqueue_style(MT_THEME_NAME.'-style', get_stylesheet_uri());
 }
 add_action('wp_enqueue_scripts', 'mtTheme_scripts');
 
@@ -18,12 +24,12 @@ function mtTheme_setup() {
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
 	 */
-	load_theme_textdomain('mtTheme', get_template_directory() . '/languages');
+	load_theme_textdomain(MT_THEME_NAME, get_template_directory() . '/languages');
 
 	// Register navigation menus
 	register_nav_menus(array(
-		'primary' => __('Primary Menu', 'mtTheme'),
-		'footer' => __('Footer Links Menu', 'mtTheme'),
+		'primary' => __('Primary Menu', MT_THEME_NAME),
+		'footer' => __('Footer Links Menu', MT_THEME_NAME),
 	));
 
 	//add_theme_support( 'title-tag' );
