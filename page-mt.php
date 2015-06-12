@@ -24,6 +24,7 @@ if (defined('MT_DIR')) {
 				$view = new MT_View_Photographer($id);
 				break;
 			default:
+				header("HTTP/1.0 404 Not Found");
 				throw new Exception(__('Unkown viewType', 'mtTheme'));
 		}
 	} catch (Exception $e) {
