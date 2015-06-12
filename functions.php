@@ -4,8 +4,6 @@
  */
 define('MT_THEME_NAME', 'mt-wp-theme');
 
-echo MT_THEME_NAME;
-
 /**
  * Enqueue scripts and styles.
  */
