@@ -42,7 +42,7 @@ add_action('after_setup_theme', 'mtTheme_setup');
 
 if (is_admin()) :
 function mtTheme_admin_menus() {
-   add_submenu_page('themes.php', 'mtTheme '.__('Settings'), __('Settings'), 'manage_options', 'mtTheme-settings', 'mtTheme_page_settings');
+   add_submenu_page('themes.php', 'mtTheme '.__('Settings'), __('Settings'), 'edit_others_pages', 'mtTheme-settings', 'mtTheme_page_settings');
    
    add_action('admin_init', 'mtTheme_register_setting');
 }
@@ -59,7 +59,7 @@ endif; // is_admin
 function mtTheme_page_settings() {
 ?>
 <div class="wrap">
-    <h2>mtTheme <?php _e('Settings'); ?></h2>
+    <h2>MT-Theme <?php _e('Settings'); ?></h2>
     <form method="post" action="options.php">
 		<?php settings_fields('mtTheme-settings'); ?>
 		<?php do_settings_sections('mtTheme-settings'); ?>
