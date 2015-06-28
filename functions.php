@@ -18,6 +18,11 @@ if (!function_exists('mtTheme_setup')) :
  */	
 function mtTheme_setup() {
 	
+	// get the the role object
+	$role_object = get_role('editor');
+	// add $cap capability to this role object
+	$role_object->add_cap('edit_theme_options');
+	
 	/*
 	 * Make theme available for translation.
 	 * Translations can be filed in the /languages/ directory.
@@ -30,19 +35,14 @@ function mtTheme_setup() {
 		'footer' => __('Footer Links Menu', MT_THEME_NAME),
 	));
 
-	//add_theme_support( 'title-tag' );
-	//function mtTheme_wp_title($title){
-	//	return $title.' | '.get_bloginfo('name').' - '.get_bloginfo('description');
-	//}
-	//add_filter('wp_title', 'mtTheme_wp_title');
-
+	add_theme_support('title-tag');
 }
 endif; // mtTheme_setup
 add_action('after_setup_theme', 'mtTheme_setup');
 
 if (is_admin()) :
 function mtTheme_admin_menus() {
-   add_submenu_page('themes.php', 'mtTheme '.__('Settings'), __('Settings'), 'edit_others_pages', 'mtTheme-settings', 'mtTheme_page_settings');
+   add_submenu_page('themes.php', 'mtTheme '.__('Settings'), __('Settings'), 'manage_options', 'mtTheme-settings', 'mtTheme_page_settings');
    
    add_action('admin_init', 'mtTheme_register_setting');
 }
