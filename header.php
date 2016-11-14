@@ -7,9 +7,9 @@ setlocale(LC_ALL, get_locale().'.'.get_bloginfo('charset'));
 	<!-- Meta -->
 	<meta charset="<?php bloginfo('charset'); ?>"
 	<meta name="viewport" content="width=device-width">
-	<meta name="author" content="<?php echo get_option('author'); ?>">	
+	<meta name="author" content="<?php echo get_option('author'); ?>">
 	<meta name="description" content="<?php echo get_option('description'); ?>">
-	<meta name="keywords" content="<?php echo get_option('keywords'); ?>">	
+	<meta name="keywords" content="<?php echo get_option('keywords'); ?>">
 
 	<!-- Title -->
 	<title><?php the_title(); ?> | <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
