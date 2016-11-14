@@ -12,32 +12,12 @@ setlocale(LC_ALL, get_locale().'.'.get_bloginfo('charset'));
 	<meta name="keywords" content="<?php echo get_option('keywords'); ?>">	
 
 	<!-- Title -->
-	<title><?php global $view; ($view) ? $view->outputTitle() : the_title(); ?> | <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
+	<title><?php wp_title(''); ?> | <?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></title>
 
 	<!-- Link -->
 	<link rel="shortcut icon" href="<?php echo get_stylesheet_directory_uri(); ?>/images/favicon.ico" />
 
-	<?php wp_head(); ?>	
-
-	<?php if (method_exists($view, 'checkWidescreen') && $view->checkWidescreen()) { ?>
-	<style type="text/css">
-	header {
-		margin: 0 0 0 0px;
-	}
-	#content_container {
-		margin: 0 0 0 0px;
-	}
-	#navigation {
-		margin-left: 0px;
-	}
-	#column_left {
-		padding-left: 10px;
-	}
-	article {
-		width: 750px;
-	}
-	</style>	
-	<?php } ?>	
+	<?php wp_head(); ?>
 
 </head>
 
