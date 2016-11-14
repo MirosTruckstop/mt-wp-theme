@@ -42,9 +42,9 @@ add_action('after_setup_theme', 'mtTheme_setup');
 
 if (is_admin()) :
 function mtTheme_admin_menus() {
-   add_submenu_page('themes.php', 'mtTheme '.__('Settings'), __('Settings'), 'manage_options', 'mtTheme-settings', 'mtTheme_page_settings');
-   
-   add_action('admin_init', 'mtTheme_register_setting');
+	add_submenu_page('themes.php', 'mtTheme '.__('Settings'), __('Settings'), 'manage_options', 'mtTheme-settings', 'mtTheme_page_settings');
+
+	add_action('admin_init', 'mtTheme_register_setting');
 }
 add_action('admin_menu', 'mtTheme_admin_menus');
 
@@ -86,3 +86,19 @@ function mtTheme_page_settings() {
 </div>
 <?php
 }
+
+function mtTheme_the_breadcrumb() {
+	$items = apply_filters('mtTheme_breadcrumb_items', array());
+	if (is_array($items) && !empty($items)) {
+		echo '<div id="link_leiste" itemscope itemtype="http://data-vocabulary.org/Breadcrumb">';
+
+		foreach ($items as $link => $label) {
+			echo '<a href="'.$link.'" itemprop="url"><span itemprop="title">'.$label.'</span></a>';
+			if (!empty($link)) {
+				echo '&nbsp;>&nbsp;';
+			}
+		}
+		echo '</div>';
+	}
+}
+add_action('mtTheme_the_breadcrumb', 'mtTheme_the_breadcrumb');
